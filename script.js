@@ -1,5 +1,5 @@
 // Dán URL Web App Apps Script vào giữa hai dấu nháy sau khi triển khai.
-const APPS_SCRIPT_URL = "DAN_LINK_APPS_SCRIPT_CUA_BAN_VAO_DAY";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyONdKXVixoXK_s0oI7di-i4XTEUD84jdY25sO7eLd8RHQeHHboiIYsedgzqeFuV8lJiA/exec";
 
 async function sendForm(form, action, statusElement) {
   if (!APPS_SCRIPT_URL.startsWith("https://script.google.com/")) {
