@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hồng Quân | Giải Bài Tập Tin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="logo">📘 HỒNG QUÂN</div>
+    <nav>
+      <a href="#home">Trang chủ</a>
+      <a href="#dichvu">Dịch vụ</a>
+      <a href="#dat">Đặt yêu cầu</a>
+      <a href="#key">Mua KEY</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="book book-one">TIN HỌC</div>
+      <div class="hero-content">
+        <span class="tag">📚 HỌC TẬP • SÁNG TẠO • CÔNG NGHỆ</span>
+        <h1>HỒNG QUÂN<br><span>GIẢI BÀI TẬP TIN</span></h1>
+        <p>Gửi yêu cầu học tập, nhận hướng dẫn và hỗ trợ bài Tin học.</p>
+        <a class="main-button" href="#dat">Gửi yêu cầu ngay</a>
+      </div>
+      <div class="book book-two">💻</div>
+    </section>
+
+    <section class="section" id="dichvu">
+      <h2>✨ Dịch vụ</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">💻</div>
+          <h3>Hỗ trợ Tin học</h3>
+          <p>Gửi nội dung cần hướng dẫn hoặc giải thích.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">📖</div>
+          <h3>Hướng dẫn bài tập</h3>
+          <p>Trình bày từng bước để bạn hiểu cách làm.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🔑</div>
+          <h3>Yêu cầu KEY</h3>
+          <p>Gửi yêu cầu mua hoặc hỏi thông tin KEY.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section form-section" id="dat">
+      <h2>📝 Gửi yêu cầu</h2>
+      <form id="orderForm">
+        <label for="name">Tên của bạn</label>
+        <input id="name" name="name" required placeholder="Nhập tên">
+
+        <label for="contact">Thông tin liên hệ</label>
+        <input id="contact" name="contact" required placeholder="Email hoặc tài khoản liên hệ">
+
+        <label for="subject">Môn / nội dung cần hỗ trợ</label>
+        <input id="subject" name="subject" required placeholder="Ví dụ: Tin học lớp 7">
+
+        <label for="detail">Mô tả yêu cầu</label>
+        <textarea id="detail" name="detail" rows="5" required
+          placeholder="Nhập bài tập hoặc điều bạn cần hỗ trợ"></textarea>
+
+        <button type="submit">Gửi yêu cầu</button>
+        <p class="status" id="orderStatus" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section form-section" id="key">
+      <h2>🔑 Đăng ký / hỏi mua KEY</h2>
+      <form id="keyForm">
+        <label for="keyName">Tên của bạn</label>
+        <input id="keyName" name="name" required placeholder="Nhập tên">
+
+        <label for="keyContact">Thông tin liên hệ</label>
+        <input id="keyContact" name="contact" required placeholder="Email hoặc tài khoản liên hệ">
+
+        <label for="plan">Loại KEY muốn hỏi</label>
+        <select id="plan" name="plan" required>
+          <option value="">-- Chọn loại KEY --</option>
+          <option value="KEY cơ bản">KEY cơ bản</option>
+          <option value="KEY nâng cao">KEY nâng cao</option>
+          <option value="Chưa rõ, cần tư vấn">Chưa rõ, cần tư vấn</option>
+        </select>
+
+        <label for="keyNote">Ghi chú</label>
+        <textarea id="keyNote" name="note" rows="3"
+          placeholder="Thông tin thêm (nếu có)"></textarea>
+
+        <button type="submit">Gửi yêu cầu KEY</button>
+        <p class="status" id="keyStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Hồng Quân | Giải Bài Tập Tin</p>
+    <p>Học tập vui vẻ – Sử dụng công nghệ có trách nhiệm 📘</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
